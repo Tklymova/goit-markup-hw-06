@@ -195,11 +195,14 @@ p {
     width: 100%;
 
 }
-.link-nav-current {color: var(--color-ocean);}
+
+.link-nav-current {
+    color: var(--color-ocean);
+}
 
 .link-nav.link-nav-current::after {
     background-color: var(--color-ocean);
-   
+
 }
 
 /*addres*/
@@ -527,6 +530,39 @@ p {
     background-color: var(--color-green);
 }
 
+.footer-form {
+    margin-left: 80px;
+}
+
+.footer-email {
+    display: flex;
+    gap: var(--indent);
+}
+
+.subscribe-btn {
+    background-color: var(--color-iris);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    margin: 0 auto;
+    cursor: pointer;
+    border-radius: 4px;
+    color: var(--color-white);
+    min-width: 165px;
+    height: 40px;
+    transition-property: background;
+    transition-duration: var(--time-set);
+    transition-timing-function: var(--timing-function);
+}
+
+.subscribe-btn:focus,
+.subscribe-btn:hover {
+    background-color: var(--color-ocean);
+}
+
+
 /*portfolio*/
 .section-button {
     padding: 96px 0px 120px;
@@ -557,7 +593,6 @@ p {
     transition-property: background, color, border, box-shadow;
     transition-duration: var(--time-set);
     transition-timing-function: var(--timing-function);
-
 
 }
 
@@ -642,7 +677,7 @@ p {
 }
 
 .link-marketing:hover .overlay-maketing,
-.link-marketing:focus .overlay-maketing{
+.link-marketing:focus .overlay-maketing {
     transform: translateY(0);
 }
 
@@ -656,12 +691,12 @@ p {
     bottom: 0;
     background: rgba(46, 47, 66, 0.4);
     opacity: 1;
-visibility: visible;
-pointer-events: initial;
-   transition-property: opacity, visibility;
-   transition-duration: var(--time-set);
-   transition-timing-function: var(--timing-function);   
-  }
+    visibility: visible;
+    pointer-events: initial;
+    transition-property: opacity, visibility;
+    transition-duration: var(--time-set);
+    transition-timing-function: var(--timing-function);
+}
 
 .studio-window {
     width: 408px;
@@ -673,8 +708,8 @@ pointer-events: initial;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-  
+    transform: translate(-50%, -50%);
+
 }
 
 .window-button {
@@ -696,19 +731,95 @@ pointer-events: initial;
 
 }
 
-.is-hidden{opacity: 0;
-visibility: hidden;
-pointer-events: none;
-transition-delay: var(--time-set);}
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition-delay: var(--time-set);
+}
 
-.modal-icon {fill: currentColor}
+.modal-icon {
+    fill: currentColor
+}
 
 .window-button:hover,
 .window-button:focus {
     border: 1px solid var(--color-ocean);
     background-color: var(--color-ocean);
-    color: var(--color-white);}
+    color: var(--color-white);
+}
 
+label {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+}
 
+label.contact-accept {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
 
-    
+.contact-section {
+    padding: 72px 24px 24px;
+}
+
+.contact-header {
+    color: var(--color-navy-blue);
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.contact-note {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+}
+
+.contact-field-name {
+    margin-top: 16px;
+}
+
+.contact-field {
+    margin-top: 8px;
+}
+
+.contact-field-accept {
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+.contact-note-link {
+    color: var(--color-iris);
+}
+
+.contact-button {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 16px 32px; */
+    background-color: var(--color-iris);
+    border: none;
+    margin: 0 auto;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: var(--color-white);
+    min-width: 169px;
+    height: 56px;
+    transition-property: background;
+    transition-duration: var(--time-set);
+    transition-timing-function: var(--timing-function);
+}
+
+.contact-button:focus,
+.contact-button:hover {
+    background-color: var(--color-ocean);
+}
