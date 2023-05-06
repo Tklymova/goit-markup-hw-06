@@ -813,14 +813,17 @@ label.contact-accept {
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     padding-left: 38px;
+    outline: 1px solid transparent;
     border-color: var(--color-navy-blue);
-    transition-property: outline-color;
+    transition-property: outline-color, border;
     transition-duration: var(--time-set);
     transition-timing-function: var(--timing-function);
 }
 
-.contact-size {
+.contact-size:focus {
     outline-color: var(--color-iris);
+    border: transparent;
+
 }
 
 .contact-size:focus+.name-icon {
